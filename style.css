@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color--light: #F3EED9;
+    --color--neutral: #6b3826;
+    --color--dark: #222C2A;
+}
+
+.wrapper  {
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+  
+    padding: 5em;
+}
+
+.container__light {
+    background-color: var(--color--light);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__neutral {
+    background-color: var(--color--neutral);
+    color: white;
+}
+
+.container__dark {
+    background-color: var(--color--dark);
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 50%;
+    padding: 1.5em;
+    max-width: 1100px;
+}
+
+/* .col + .col {
+    margin-left: 2em;;
+} */
+
+.container__light p {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container__light h1 {
+    font-size: 2.8rem;
+    margin-top: 0.2em; 
+    color: var(--color--neutral);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.container__light p, h1 {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-one {
+    text-align: center;
+    color: var(--color--neutral);
+    font-family: 'Playfair Display', serif;
+    /* font-size: 1.3rem; */
+}
+
+.col h2 {
+    margin-bottom: 0.5em; 
+    font-family: 'Playfair Display', serif;
+    /* font-size: 1.3rem;  */
+}
+
+.row p {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 0.85rem; */
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 7em;
+        font-size: 1.3rem;
+    }
+
+    .col__img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        justify-content: center;align-self: center;
+    }
+
+    .container {
+        padding: 1em;
+    }
+
+    .col__img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .container__light h1 {
+        width: 100%;
+    }
+}
